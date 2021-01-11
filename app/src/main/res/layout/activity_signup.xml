@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <ImageButton
+        android:id="@+id/picture1"
+        android:layout_width="66dp"
+        android:onClick="dispatchTakePictureIntent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/darkgrey"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toTopOf="@id/textNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@drawable/ic_file_upload" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto de perfil"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/picture1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/name_text"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/picture1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:hint="@string/example_name"
+        android:inputType="text"
+        android:textColorHint="@color/darkgrey"
+        app:layout_constraintEnd_toEndOf="@id/textNombre"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        app:layout_constraintTop_toBottomOf="@id/textNombre"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12pt"
+        android:drawablePadding="10dp"
+        android:text="@string/phone_text"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_smartphone_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/example_phone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@id/textNombre"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        app:layout_constraintTop_toBottomOf="@id/textPhone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12pt"
+        android:text="@string/mail_text"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_mail_outline"
+        android:drawablePadding="10dp"
+        android:hint="@string/example_mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@id/textNombre"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        app:layout_constraintTop_toBottomOf="@id/textMail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12pt"
+        android:text="@string/pass_text"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:hint="@string/example_pass"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/textNombre"
+        app:layout_constraintStart_toStartOf="@id/textNombre"
+        app:layout_constraintTop_toBottomOf="@id/textInfo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:text="@string/button_reg_value"
+        android:id="@+id/sign"
+        app:layout_constraintStart_toStartOf="@id/picture1"
+        app:layout_constraintEnd_toEndOf="@id/picture1"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:layout_marginTop="13dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

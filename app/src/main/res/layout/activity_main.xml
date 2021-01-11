@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32afb5"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="291dp"
+        android:layout_height="51dp"
+        android:text="@string/welcome"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="153dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="15pt"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/white_logo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/userText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/usuario_input"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.504"
+        android:layout_marginTop="20pt"
+        app:layout_constraintStart_toStartOf="@id/imageView3"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        android:textColorHint="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/passText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/pass_input"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="15pt"
+        app:layout_constraintStart_toStartOf="@id/userText"
+        app:layout_constraintTop_toBottomOf="@id/userText"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLog_value"
+        app:layout_constraintStart_toStartOf="@id/passText"
+        app:layout_constraintTop_toBottomOf="@id/passText"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="12pt"
+        android:layout_marginLeft="15pt"
+        />
+
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnReg_value"
+        app:layout_constraintTop_toTopOf="@id/btnLog"
+        app:layout_constraintEnd_toEndOf="@id/passText"
+        android:layout_marginRight="20pt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="552dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/pacifico"
+        android:text="Pet"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Walk"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pacifico"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

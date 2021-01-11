@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "361731921656",
+    "project_id": "petwalk-cb147",
+    "storage_bucket": "petwalk-cb147.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361731921656:android:e705dd24724e96189e8d0d",
+        "android_client_info": {
+          "package_name": "com.example.petwalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361731921656-n74t248kltg3rlsciojda9uv8skmkuao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petwalk",
+            "certificate_hash": "d08bad73e65fa5c881cbbc45ac7ced69e0b023ae"
+          }
+        },
+        {
+          "client_id": "361731921656-go0k3trg1o4rd2ugi29tn4rhnj230vtf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjRfzvITrVXWXjQBZvh3XiJNt_Ej7p3hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361731921656-go0k3trg1o4rd2ugi29tn4rhnj230vtf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
